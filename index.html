@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-white text-gray-900 transition-colors duration-500">
+
+  <!-- Navbar -->
+  <nav class="fixed w-full bg-white/70 dark:bg-gray-800/70 backdrop-blur-md z-50 shadow">
+    <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+      <h1 class="text-xl font-bold">MyPortfolio</h1>
+      <ul class="flex gap-6 font-medium">
+        <li><a href="#dashboard" class="hover:text-indigo-500">Dashboard</a></li>
+        <li><a href="#about" class="hover:text-indigo-500">About</a></li>
+        <li><a href="#education" class="hover:text-indigo-500">Education</a></li>
+        <li><a href="#work" class="hover:text-indigo-500">Work</a></li>
+        <li><a href="#projects" class="hover:text-indigo-500">Projects</a></li>
+        <li><a href="#contact" class="hover:text-indigo-500">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Dashboard -->
+  <section id="dashboard" 
+    class="h-screen flex items-center justify-center text-white fade-in relative overflow-hidden">
+    <div class="absolute inset-0 bg-fixed bg-cover bg-center z-0"
+     style="background-image: url(assets/backround.png);">
+</div>
+<div class="absolute inset-0 bg-black/60 z-0"></div>
+
+    <div class="relative z-10 max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center px-6">
+      <div class="space-y-6">
+        <p class="text-lg">I’m <span class="font-semibold text-indigo-400">Rayhan Aqshal 👋</span></p>
+        <h1 class="text-5xl md:text-6xl font-extrabold leading-tight">
+          <span id="typing-text" class="border-r-4 border-indigo-500 pr-2"></span>
+        </h1>
+        <a href="#contact"
+          class="inline-block px-6 py-3 bg-indigo-600 text-white font-semibold rounded-lg shadow hover:bg-indigo-700 transition">
+          Hire Me
+        </a>
+      </div>
+      <div class="relative flex justify-center md:justify-end">
+        <div class="absolute inset-0 flex justify-center md:justify-end">
+          <div class="bg-indigo-600 w-64 h-72 md:w-80 md:h-96 rounded-2xl transform rotate-6"></div>
+        </div>
+        <img src="assets/profile.jpg.jpeg" alt="Profile"
+          class="relative w-64 h-72 md:w-80 md:h-96 object-cover rounded-2xl shadow-lg">
+      </div>
+    </div>
+  </section>
+
+ <!-- About Me -->
+<section id="about" class="py-20 fade-in bg-blue-200 dark:bg-gray-900">
+  <div class="max-w-5xl mx-auto px-6 flex flex-col md:flex-row items-center justify-center gap-10 text-center md:text-left">
+    
+    <!-- Foto Profil -->
+  <div class="w-40 h-40 md:w-56 md:h-56 rounded-full overflow-hidden shadow-lg bg-blue-200">
+  <img src="assets/profile.jpg.jpeg"
+       class="w-full h-full object-cover transform transition duration-500 hover:scale-110">
+  </div>
+
+    <!-- Teks -->
+    <div class="max-w-2xl">
+      <h2 class="text-3xl font-bold mb-6">About Me</h2>
+      <p class="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+        Perkenalkan saya <b>Rayhan Aqshal</b> lulusan Teknik Informatika dari Universitas Persada Indonesia.
+        Saya orang yang sangat bekerja keras menekuni bidang saya dan motivasi diri yang sangat baik untuk bekerja
+        dalam tim maupun individu, memiliki rasa inisiatif yang baik, memiliki kedisiplinan dalam diri,
+        dapat berkomunikasi dengan baik dan dapat beradaptasi dengan cepat.  
+        Saya memiliki pemahaman tentang jaringan komputer dan teknologi informasi, saya telah berhasil mengelola dan 
+        mengoptimalkan infrastruktur jaringan di beberapa project yang saya handle. Keahlian saya dalam perencanaan, 
+        implementasi, dan pemeliharaan jaringan memastikan konektivitas yang stabil dan aman untuk mendukung operasi bisnis.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+  <!-- Education -->
+<section class="py-16 bg-gray-50 dark:bg-gray-900">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-3xl font-bold mb-10 text-center">Education</h2>
+    <div class="flex items-center justify-between relative">
+
+      <div class="flex-1 text-center">
+        <div class="w-12 h-12 mx-auto rounded-full bg-indigo-500 text-white flex items-center justify-center">🎓</div>
+        <h3 class="mt-4 font-bold">S1 - Teknik Informatika</h3>
+        <p class="text-sm text-gray-500">2018 – 2022</p>
+      </div>
+
+      <div class="flex-1 text-center">
+        <div class="w-12 h-12 mx-auto rounded-full bg-green-500 text-white flex items-center justify-center">💻</div>
+        <h3 class="mt-4 font-bold">SMK Saradan</h3>
+        <p class="text-sm text-gray-500">2015 – 2018</p>
+      </div>
+
+      <div class="flex-1 text-center">
+        <div class="w-12 h-12 mx-auto rounded-full bg-blue-500 text-white flex items-center justify-center">🏫</div>
+        <h3 class="mt-4 font-bold">SMPN 02 Bojong Gede</h3>
+        <p class="text-sm text-gray-500">2012 – 2015</p>
+      </div>
+
+      <div class="flex-1 text-center">
+        <div class="w-12 h-12 mx-auto rounded-full bg-yellow-500 text-white flex items-center justify-center">📚</div>
+        <h3 class="mt-4 font-bold">SD Nanggerang 01</h3>
+        <p class="text-sm text-gray-500">2006 – 2012</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  <!-- Work Experience -->
+<section id="work" class="py-20 fade-in text-center">
+  <div class="max-w-4xl mx-auto px-6">
+    <h2 class="text-3xl font-bold mb-10">Work Experience</h2>
+
+    <div class="space-y-6">
+      <!-- Card 1 -->
+      <div class="flex items-center gap-6 p-6 bg-gray-100 dark:bg-gray-800 rounded-lg shadow text-left">
+        <img src="assets/berca-logo.png" alt="PT Berca Hardayaprakarsa" class="w-16 h-16 object-contain rounded" />
+        <div>
+          <h3 class="font-bold">Network & Security Engineer – PT. Berca Hardayaprakarsa | September 2025 s/d Sekarang </h3>
+          Project di PT. APR (Aneka Petroindo Raya)
+          <p>• Manajemen Infrastruktur Head Office</p>
+          <p>• Manajemen Infrastruktur Site SPBU </p>
+          <p>• Monitoring & Support</p>
+          <p>• Koordinasi & Reporting</p>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="flex items-center gap-6 p-6 bg-gray-100 dark:bg-gray-800 rounded-lg shadow text-left">
+        <img src="assets/nusa-logo.png" alt="PT Nusa Network Prakarsa" class="w-16 h-16 object-contain rounded" />
+        <div>
+          <h3 class="font-bold">Network Engineer – PT. Nusa Network Prakarsa | Juni 2023 s/d Juni 2025 </h3>
+          <p>• Melakukan Asessment lokasi pada user terkait kebutuhan pada project</p>
+          <p>• Melakukan Intsallasi Network dan Wirelless</p>
+          <p>• Melakukan Preventive Maintenance & Corective Maintenance</p>
+          <p>• Membuat Document MOP,UAT,Documentasi</p>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="flex items-center gap-6 p-6 bg-gray-100 dark:bg-gray-800 rounded-lg shadow text-left">
+        <img src="assets/unhan-logo.png" alt="Universitas Pertahanan RI" class="w-20 h-20 object-contain rounded" />
+        <div>
+          <h3 class="font-bold">IT Support – Universitas Pertahanan Republik Indonesia | Desember 2023 s/d Juni 2023 </h3>
+          <p> • Melakukan Pemeliharaan dan Memonitoring Jaringan Internet</p>
+          <p> • Melakukan Pemeliharaan Perangkat Smart Class</p>
+          <p> • Melakukan Pemeliharaan dan Memonitoring CCTV</p>
+          <p> • Melakukan Pemeliharaan pada perangkat PABX</p>
+          <p> • Melakukan Pemeliharaan dan Memonitoring Perangkat Fingerprint</p>
+          <p> • Mengoprasikan Kamera pada kegiatan video conference</p>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="flex items-center gap-6 p-6 bg-gray-100 dark:bg-gray-800 rounded-lg shadow text-left">
+        <img src="assets/kimiafarma-logo.png" alt="PT Kimia Farma Tbk" class="w-20 h-20 object-contain rounded" />
+        <div>
+          <h3 class="font-bold">IT Support – PT. Kimia Farma Tbk | September 2022 s/d Desember 2022 </h3>
+          <p>• Melakukan Perbaikan Laptop & PC</p>
+          <p>• Instalasi System Operasi Windows pada Laptop & PC</p>
+          <p>• Mengatasi kerusakan pada jaringan Local Area Network (LAN)</p>
+          <p>• Memonitoring Infrastrukture jaringan</p>
+          <p>• Memastikan koneksi internet Wireles terhubung pada printer</p>
+          <p>• Membantu Backup Email User</p>
+          <p>• Memenage ketersedian Hardware</p>
+          <p>• Membuat berita acara serah terima perangkat (BAST)</p>      
+          <p>• Membantu support kegiatan pada video conference</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+ <!-- Projects Section -->
+<section id="projects" class="py-20 bg-gray-100 dark:bg-gray-800 fade-in">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-3xl font-bold mb-10 text-center">Projects Experience</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      
+      <!-- Project 1 -->
+      <div class="project-card cursor-pointer bg-white dark:bg-gray-700 rounded-lg shadow p-6 flex flex-col items-center hover:scale-105 transition"
+           data-title="Project Coordinator"
+           data-desc="Sebagai Project Coordinator di Divtik Mabes Polri, saya memimpin beberapa proyek IT yang mencakup instalasi, konfigurasi, dan manajemen infrastruktur jaringan. Fokus utama adalah memastikan standar keamanan tinggi serta kestabilan operasional IT yang mendukung kegiatan organisasi.">
+        <img src="assets/tik_polri.png" alt="Polri" class="w-24 h-24 object-contain mb-4">
+        <h3 class="font-bold text-center">Divtik Mabes Polri</h3>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card cursor-pointer bg-white dark:bg-gray-700 rounded-lg shadow p-6 flex flex-col items-center hover:scale-105 transition"
+           data-title="Installation & Configure Access Point"
+           data-desc="Melakukan instalasi dan konfigurasi access point di lingkungan PT. Finusolprima Farma Internasional. Proyek ini meningkatkan kualitas jaringan wireless di area produksi dan kantor, memastikan konektivitas stabil serta mendukung proses bisnis.">
+        <img src="assets/fima.jpg" alt="Finusolprima" class="w-24 h-24 object-contain mb-4">
+        <h3 class="font-bold text-center">PT.Finusolprima Farma</h3>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card cursor-pointer bg-white dark:bg-gray-700 rounded-lg shadow p-6 flex flex-col items-center hover:scale-105 transition"
+           data-title="Installation and Configure HikCentral CCTV Hikvision, Access Point & Switch"
+           data-desc="Menangani instalasi sistem CCTV HikCentral Hikvision di pabrik PT. Yupi Indo Jelly Gum. Sistem ini memberikan monitoring real-time untuk area produksi, meningkatkan keamanan, serta memudahkan manajemen dalam audit internal.">
+        <img src="assets/Yupi.png" alt="Yupi" class="w-24 h-24 object-contain mb-4">
+        <h3 class="font-bold text-center"> PT.Yupi Indo Jelly Gum</h3>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="project-card cursor-pointer bg-white dark:bg-gray-700 rounded-lg shadow p-6 flex flex-col items-center hover:scale-105 transition"
+           data-title="Preventive & Corrective Maintenance"
+           data-desc="Melakukan preventive dan corrective maintenance infrastruktur jaringan di PT. Tunas Ridean Tbk. Kegiatan mencakup monitoring jaringan, perbaikan perangkat bermasalah, serta peningkatan sistem agar operasional tidak terganggu.">
+        <img src="assets/tunas.png" alt="Tunas Ridean" class="w-28 h-28 object-contain mb-4">
+        <h3 class="font-bold text-center">PT. Tunas Ridean Tbk</h3>
+      </div>
+
+      <!-- Project 5 -->
+      <div class="project-card cursor-pointer bg-white dark:bg-gray-700 rounded-lg shadow p-6 flex flex-col items-center hover:scale-105 transition"
+           data-title="Installation & Configure WLC, Access Point Cisco Catalyst 9120"
+           data-desc="Instalasi dan konfigurasi Access Point Cisco Catalyst 9120 di PT. Pertamina PDC. Memberikan jaringan wireless yang lebih kuat, stabil, dan mendukung kebutuhan komunikasi serta aplikasi internal.">
+        <img src="assets/PDC.png" alt="Pertamina" class="w-24 h-24 object-contain mb-4">
+        <h3 class="font-bold text-center">PT.Pertamina Patra Driling Contractor</h3>
+      </div>
+
+      <!-- Project 6 -->
+      <div class="project-card cursor-pointer bg-white dark:bg-gray-700 rounded-lg shadow p-6 flex flex-col items-center hover:scale-105 transition"
+           data-title="Preventive & Corrective Maintenance Access Point Aruba"
+           data-desc="Menangani pemeliharaan jaringan wireless Aruba di PT. Penjaminan Infrastruktur Indonesia. Pekerjaan mencakup update firmware, troubleshooting koneksi, serta optimasi coverage jaringan.">
+        <img src="assets/Pii.png" alt="PII" class="w-24 h-24 object-contain mb-4">
+        <h3 class="font-bold text-center">PT. Penjaminan Infrastruktur Indonesia </h3>
+      </div>
+
+      <!-- Project 7 -->
+      <div class="project-card cursor-pointer bg-white dark:bg-gray-700 rounded-lg shadow p-6 flex flex-col items-center hover:scale-105 transition"
+           data-title="Preventive & Corrective Maintenance Access Point Cisco"
+           data-desc="Mengelola pemeliharaan jaringan wireless Cisco di Mining Industri Indonesia (MIND ID). Tujuannya adalah memastikan kestabilan jaringan di lingkungan industri dengan tantangan coverage yang luas.">
+        <img src="assets/mindid.png" alt="MIND ID" class="w-24 h-24 object-contain mb-4">
+        <h3 class="font-bold text-center"> Mining Industrie Indonesia MIND ID</h3>
+      </div>
+
+      <!-- Project 8 -->
+      <div class="project-card cursor-pointer bg-white dark:bg-gray-700 rounded-lg shadow p-6 flex flex-col items-center hover:scale-105 transition"
+           data-title="Assessment Quality Network Wireless"
+           data-desc="Melakukan asesmen kualitas jaringan wireless di kampus Universitas Katolik Indonesia Atma Jaya. Proyek ini menghasilkan rekomendasi untuk meningkatkan kualitas coverage WiFi di area kampus.">
+        <img src="assets/atmajaya.png" alt="Atma Jaya" class="w-24 h-24 object-contain mb-4">
+        <h3 class="font-bold text-center">Universitas Atma Jaya</h3>
+      </div>
+
+      <!-- Project 9 -->
+      <div class="project-card cursor-pointer bg-white dark:bg-gray-700 rounded-lg shadow p-6 flex flex-col items-center hover:scale-105 transition"
+           data-title="Installation & Configure Huawei Access Controller and Access Point Huawei"
+           data-desc="Instalasi dan konfigurasi Huawei Access Controller untuk jaringan wireless di PT. Geo Dipa Energi. Sistem ini mendukung pengelolaan AP secara terpusat dan meningkatkan keamanan jaringan.">
+        <img src="assets/geodipa.png" alt="Geo Dipa" class="w-24 h-24 object-contain mb-4">
+        <h3 class="font-bold text-center">PT. Geodipa Energy</h3>
+      </div>
+
+      <!-- Project 10 -->
+      <div class="project-card cursor-pointer bg-white dark:bg-gray-700 rounded-lg shadow p-6 flex flex-col items-center hover:scale-105 transition"
+           data-title="Configure Fortinet 40F & Switch Ruijie Reye"
+           data-desc="Konfigurasi firewall Fortinet 40F dan switch Ruijie untuk seluruh site DISDUKCAPIL. Proyek ini meningkatkan keamanan jaringan antar kantor serta mengoptimalkan konektivitas antar lokasi.">
+        <img src="assets/dukcapil.png" alt="Disdukcapil" class="w-28 h-28 object-contain mb-8">
+        <h3 class="font-bold text-center">Kementrian Dalam Negeri</h3>
+      </div>
+
+      <!-- Project 11 -->
+      <div class="project-card cursor-pointer bg-white dark:bg-gray-700 rounded-lg shadow p-6 flex flex-col items-center hover:scale-105 transition"
+           data-title="Installation & Configure Cisco Meraki MR36"
+           data-desc="Instalasi dan konfigurasi Access Point Cisco Meraki MR36 di PT. Conwood Indonesia. Memberikan solusi wireless berbasis cloud yang lebih mudah dikelola dan dipantau.">
+        <img src="assets/conwood.jpeg" alt="Conwood" class="w-24 h-24 object-contain mb-4">
+        <h3 class="font-bold text-center">PT.Conwood Indonesia</h3>
+      </div>
+
+      <!-- Project 12 -->
+      <div class="project-card cursor-pointer bg-white dark:bg-gray-700 rounded-lg shadow p-6 flex flex-col items-center hover:scale-110 transition"
+           data-title="Installation Access Point & Switch Ruijie"
+           data-desc="Melakukan instalasi access point dan switch Ruijie untuk mendukung jaringan produksi di PT. Mizushima Metal Work Indonesia. Sistem ini memastikan kestabilan jaringan untuk operasional industri.">
+        <img src="assets/mizushima.png" alt="Mizushima" class="w-24 h-24 object-contain mb-4">
+        <h3 class="font-bold text-center">PT.Mizushima Metal Work Indonesia</h3>
+      </div>
+
+      <!-- Project 13 -->
+      <div class="project-card cursor-pointer bg-white dark:bg-gray-700 rounded-lg shadow p-6 flex flex-col items-center hover:scale-105 transition"
+           data-title="Relokasi Server Bank Victoria to Data Center BITERA"
+           data-desc="Proyek relokasi server Bank Victoria ke Data Center BITERA. Melibatkan proses migrasi server dengan downtime minimal, konfigurasi ulang jaringan, serta uji coba failover.">
+        <img src="assets/victoria.png" alt="Bank Victoria" class="w-24 h-24 object-contain mb-4">
+        <h3 class="font-bold text-center">Bank Victoria</h3>
+      </div>
+
+      <!-- Project 14 -->
+      <div class="project-card cursor-pointer bg-white dark:bg-gray-700 rounded-lg shadow p-6 flex flex-col items-center hover:scale-105 transition"
+           data-title="Installation Access Point Aruba 505"
+           data-desc="Instalasi Access Point Aruba di PT. Indo Raya Tenaga untuk mendukung jaringan di area power plant. Memberikan akses stabil bagi staf dan sistem monitoring.">
+        <img src="assets/indoraya.png" alt="Indo Raya" class="w-24 h-24 object-contain mb-4">
+        <h3 class="font-bold text-center">PT.Indo Raya Tenaga</h3>
+      </div>
+
+      <!-- Project 15 -->
+      <div class="project-card cursor-pointer bg-white dark:bg-gray-700 rounded-lg shadow p-6 flex flex-col items-center hover:scale-105 transition"
+           data-title="Installation Access Point & Switch Huawei"
+           data-desc="Instalasi access point dan switch di PT. Elnusa Tbk. Pekerjaan mencakup desain jaringan, pemasangan perangkat, serta konfigurasi agar sesuai standar enterprise.">
+        <img src="assets/elnusa.png" alt="Elnusa" class="w-24 h-24 object-contain mb-4">
+        <h3 class="font-bold text-center">PT. Elnusa Tbk</h3>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Modal -->
+<div id="projectModal" class="fixed inset-0 bg-black/70 hidden items-center justify-center z-50">
+  <div class="bg-white dark:bg-gray-800 p-6 rounded-lg max-w-lg shadow-lg relative">
+    <button id="closeModal" class="absolute top-2 right-2 text-2xl">✖</button>
+    <h3 id="modalTitle" class="text-2xl font-bold mb-4">Project Title</h3>
+    <p id="modalDesc">Deskripsi project akan muncul di sini...</p>
+  </div>
+</div>
+
+  <!-- Contact -->
+  <section id="contact" class="py-20 fade-in text-center">
+  <section id="about" class="py-20 fade-in bg-blue-200 dark:bg-gray-900">
+    <div class="max-w-3xl mx-auto px-6">
+      <h2 class="text-3xl font-bold mb-6">Contact</h2>
+      <form class="space-y-4">
+        <input type="text" placeholder="Your Name" class="w-full p-3 rounded-lg border dark:bg-gray-700" />
+        <input type="email" placeholder="Your Email" class="w-full p-3 rounded-lg border dark:bg-gray-700" />
+        <textarea placeholder="Your Message" rows="4" class="w-full p-3 rounded-lg border dark:bg-gray-700"></textarea>
+        <button type="submit" class="px-6 py-3 bg-indigo-600 text-white rounded-lg shadow hover:bg-indigo-700">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+<footer class="bg-gray-900 text-gray-300 py-6 mt-10">
+  <div class="max-w-6xl mx-auto text-center">
+    <p>&copy; 2025 Rayhan Aqshal. All Rights Reserved.</p>
+  </div>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
