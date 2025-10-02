@@ -1,19 +1,38 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio</title>
+  <title>Navbar Mobile</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="style.css" />
 </head>
-<body class="bg-white text-gray-900">
+<body class="bg-gray-100">
 
   <!-- Navbar -->
-  <nav class="fixed w-full bg-white/90 backdrop-blur-md z-50 shadow">
+  <nav class="fixed w-full bg-white shadow z-50">
     <div class="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
+      <!-- Logo -->
       <h1 class="text-2xl font-extrabold text-indigo-600 tracking-wide">MyPortfolio</h1>
-      <ul class="flex gap-8 font-medium text-gray-700">
+
+      <!-- Tombol Hamburger (Mobile) -->
+      <button id="menu-btn" class="block md:hidden text-3xl focus:outline-none">
+        ☰
+      </button>
+
+      <!-- Menu Desktop -->
+      <ul class="hidden md:flex gap-8 font-medium text-gray-700 items-center">
+        <li><a href="#dashboard" class="hover:text-indigo-600 transition">Dashboard</a></li>
+        <li><a href="#about" class="hover:text-indigo-600 transition">About</a></li>
+        <li><a href="#education" class="hover:text-indigo-600 transition">Education</a></li>
+        <li><a href="#work" class="hover:text-indigo-600 transition">Work</a></li>
+        <li><a href="#projects" class="hover:text-indigo-600 transition">Projects</a></li>
+        <li><a href="#contact" class="hover:text-indigo-600 transition">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Menu Mobile (Tersembunyi awalnya) -->
+    <div id="menu" class="hidden md:hidden bg-white shadow-lg">
+      <ul class="flex flex-col items-center gap-4 py-6 font-medium text-gray-700">
         <li><a href="#dashboard" class="hover:text-indigo-600 transition">Dashboard</a></li>
         <li><a href="#about" class="hover:text-indigo-600 transition">About</a></li>
         <li><a href="#education" class="hover:text-indigo-600 transition">Education</a></li>
@@ -23,6 +42,8 @@
       </ul>
     </div>
   </nav>
+
+  <div class="h-[2000px]"></div> <!-- biar bisa scroll -->
 
   <!-- Dashboard -->
   <section id="dashboard" class="h-screen flex items-center justify-center text-white relative overflow-hidden">
