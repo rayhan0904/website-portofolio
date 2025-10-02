@@ -1,3 +1,11 @@
+
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('menu');
+
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+
 // Scroll Fade-in
 const fadeElements = document.querySelectorAll(".fade-in");
 const observer = new IntersectionObserver(entries => {
